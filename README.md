@@ -1,3 +1,3 @@
 # Hello!
 
-[front-end](/front-end/introduction]
+[front-end](/front-end/introduction/)
