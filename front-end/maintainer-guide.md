@@ -24,12 +24,12 @@ To deploy the front-end, simply run the following commands in a terminal:
 1. Navigate to `src/components/Form.js`. 
 2. To get the General Public version, comment out `EmailStudentVersion` and `IntroductionStudentVersion` from imports. Note that it is important to comment out the imports because CSS applied is global in nature. If the student versions are not commented out, the CSS applied on the form will persist on the general public form, causing CSS styling conflicts between the general public and student versions.
 
-![switch-2](assets/img/switch-2.png)
+![switch-2](https://singlishwords.github.io/assets/img/switch-2.png)
 
 3. After step 2, comment out `IntroductionStudentVersion` in case 1 of switch-case. Comment out `EmailStudentVersion` in the last case.
 
-![switch-3-1](assets/img/switch-3-1.png)
-![switch-3-2](assets/img/switch-3-2.png)
+![switch-3-1](https://singlishwords.github.io/assets/img/switch-3-1.png)
+![switch-3-2](https://singlishwords.github.io/assets/img/switch-3-2.png)
 
 4. To get the Student version, repeat Steps 1 to 3. However, do the opposite for commenting/uncommenting. Comment out `Introduction` and `Email` in imports and switch-cases. Uncomment `IntroductionStudentVersion` and `EmailStudentVersion`.
 
@@ -39,12 +39,12 @@ To deploy the front-end, simply run the following commands in a terminal:
 1. Head to `formFields.js`.
 2. Define new `{question, response, timeOnPage}` objects under data field. The number of `{question, response, timeOnPage}` objects should correspond to the number of words. For example, if the desired number of words is 20, there should be 20 `{question, response, timeOnPage}` objects declared in the data field.
 
-![words-2](assets/img/words-2.png)
+![words-2](https://singlishwords.github.io/assets/img/words-2.png)
 
 3. Head to `Form.js`.
 4. The number of cases between the `<Instruction/>` component (exclusive) and `</Quiz>` component (inclusive) should be equivalent to the number of words. For example, if there are 20 words, then case 4 to case 23 are needed ($23 - 4 + 1 = 20$) to render 20 words.
 
-![words-4](assets/img/words-4.png)
+![words-4](https://singlishwords.github.io/assets/img/words-4.png)
 
 ## Changing Survey Text
 
@@ -61,22 +61,22 @@ To deploy the front-end, simply run the following commands in a terminal:
 	1. If you wish to make text design modifications (e.g Bold, italics, URL additions) to a page in addition to text changes, head to the actual page. For example, assume that we want to bold the “Progress” text of the Quiz page.
 	2. Head to Quiz.js and identify the text. Quiz.js is the code script for the Quiz page.
 
-![text-2-2](assets/img/text-2-2.png)
+![text-2-2](https://singlishwords.github.io/assets/img/text-2-2.png)
 
 	3. Add the bold tag <b></b>. (Depending on the modification needed, you can include other tags, e.g <i></i> for italics to make the text both bold and italic)
 
-![text-2-3](assets/img/text-2-3.png)
+![text-2-3](https://singlishwords.github.io/assets/img/text-2-3.png)
 
 	4. Make a text change in formData.js for formData.quizPage.progress.
 
-![text-2-4](assets/img/text-2-4.png)
+![text-2-4](https://singlishwords.github.io/assets/img/text-2-4.png)
 
 	5. Both text and text design are now modified.
 
 *Remarks: Please note that text with special text design modifications has to be declared as a separate key-value pair from regular text.*
 
-![how-it-works](assets/img/how-it-works.png)
-![text-2e](assets/img/text-2e.png)
+![how-it-works](https://singlishwords.github.io/assets/img/how-it-works.png)
+![text-2e](https://singlishwords.github.io/assets/img/text-2e.png)
 
 For example, notice that the phrase **“Enter the first word that comes to mind”** is in bold. If that happens, we need to break the description into multiple parts so that we can add a bold tag to the bolded words. In the code, the sentence “On top of the screen a Singapore English word will appear. **Enter the first word that comes to mind when reading this word.**” is broken down into `description1`, `description2`, and `description3`. This is so that we can apply `<b>instructionsPage.firstParagraphDescription.description2</b>` in `Instructions.js`.
 
